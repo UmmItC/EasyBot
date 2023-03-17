@@ -33,6 +33,7 @@ Now on your bot type `/start` to start the bot.
 the folder just only 6 files, below is the intro.
 
 ```shell
+EasyBot/
 ├── CHANGELOG.md <- ALL Update will note with this CHANGLOG file. (commits)
 ├── keyboard.yaml <- keyboard content
 ├── LICENSE <- Apache License 2.0 detai
