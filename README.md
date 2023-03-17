@@ -49,6 +49,8 @@ EasyBot/
 
 All files in this repository are released under Apache License 2.0. See [LICENSE](LICENSE) file for more information.
 
+# Tetested
+
 <table>
     <tr>
         <th>Operative system</th>
