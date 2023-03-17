@@ -33,18 +33,26 @@ Now on your bot type `/start` to start the bot.
 the folder just only 6 files, below is the intro.
 
 ```shell
-EasyBot/
+├── CHANGELOG.md <- ALL Update will note with this CHANGLOG file. (commits)
 ├── keyboard.yaml <- keyboard content
-├── main.py <- main file
-├── readme.md <- read me first please
-├── token.json <- your Telegram API key
 ├── LICENSE <- Apache License 2.0 detai
-└── CHANGELOG <- ALL Update will note with this CHANGLOG file. (commits)
+├── main.py <- main file
+├── README.md <- read me first please
+├── TODO.md <- planning to do list
+└── token.json <- your Telegram API key
 
-
-1 directory, 6 files
+1 directory, 7 files
 ```
 
 # LICENSE
 
 All files in this repository are released under Apache License 2.0. See [LICENSE](LICENSE) file for more information.
+
+<table>
+    <tr>
+        <th>Operative system</th>
+    </tr>
+    <tr>
+        <td>Arch Linux</td>
+    </tr>
+</table>
