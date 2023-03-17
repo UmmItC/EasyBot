@@ -1,0 +1,315 @@
+welcome_message: "{user_first_name} {user_last_name}，需要什麼幫助？"
+first_keyboard_showing_message_:
+  bot_infoo: |
+    此 Bot 是使用 pyTelegrambotAPI 開發出來的一個開放源碼 Bot \(Open Source Bot\)
+    有任何問題可以於 Gitlab 提出，此 Bot 會出現是因我本人的興趣和目前餘有的動力 XD
+
+    我會叫他為 EasyBot，目的為方便本人煩惱沒有 Stickers Packs 使用和沒有中文介面的時侯，使用後可以直接取得我想要的 Stickers
+
+    指令如下：
+
+    /start \- 開始使用並啟動鍵盤
+  language_install: |
+    如果你要幫你嘅 Telegram 裝一個全新嘅語言，你只需要撳下面既其中一條 link，揀返你想要邊隻 Languages 就得。
+
+    另外你想睇返 Languages 就去 Setting \-\> Languages。
+
+    來源來自 @localization\_hk
+
+    🇭🇰 繁體中文（香港）
+    tg://setlanguage?lang\=hongkong
+    適用於：所有作業系統
+    語言為：香港慣用書面語
+
+    🇭🇰 香港人口語
+    tg://setlanguage?lang\=hongkonger
+    適用於：Android / iOS / Telegram X
+    語言為：模仿香港人講嘢個陣嘅中英夾雜
+
+    🇭🇰 廣東話
+    tg://setlanguage?lang\=cantonese
+    適用於：所有作業系統
+    語言為：廣東話用詞
+
+    🇭🇰 港式潮語
+    tg://setlanguage?lang\=hkslang
+    適用於：Android / iOS / Telegram X
+    語言為：以廣東話為藍本，改用巴絲、AGGER 等論壇用語
+
+    🇭🇰 香港廣東話（18\+）
+    tg://setlanguage?lang\=hkcantonese
+    適用於：Android／iOS
+    語言為：廣東話為主，內含粗口 🔞
+
+    🇹🇼 繁體中文（台灣）
+    tg://setlanguage?lang\=taiwan
+    適用於：所有作業系統
+
+    🇹🇼 繁體中文（beta）
+    tg://setlanguage?lang\=zh\-hant\-beta
+    適用於：所有作業系統
+  username_asking_stickers_keyboard_selected: "{user_first_name} {user_last_name}，你選擇了 `Stickers Packs`，現在使用選擇一個你想要的類別吧！"
+Keyboard_close: "Keyboard Closed"
+private_chat_only: "You only can use this bot on Private chat."
+
+stickerspacks_keyboard_showing_message_selected_:
+  select_capoo_stickers_packs: "揀個你想睇嘅 Capoo Stickers Packs Type, 有動態同埋靜態俾你揀，即係識郁同唔識郁"
+  select_hkg_stickers_packs: "揀個你想睇嘅 HKG Stickers Packs Type, 有動態同埋靜態俾你揀，即係識郁同唔識郁"
+  select_cute_stickers_packs: "揀個你想睇嘅 Cute Stickers Packs Type, 有動態同埋靜態俾你揀，即係識郁同唔識郁"
+
+Unknown_text_:
+  has_been_start_keyboard_UK_TEXT: "你已經開啟了鍵盤，現時位置為 `主選單` 位置，請使用鍵盤提供的文字輸入指令！"
+  error_keyboard_text: "你現時的位置為 '未開啟主選單'，而你所輸入的 `{mess}` 是不存在的指令，請使用指令輸入指令！"
+  stickerspacks_keyboard_UK_TEXT: "你現時的位置為 `Stickers Packs`，你所輸入的 `{mess}` 並沒資料顯示，請使用鍵盤傳送指示。"
+  error_dont_know: "你所輸入的 `{mess}` 是不存在的指令，輸入 `/start` 開啟選單再繼續吧！"
+
+inlinekeyboard_showing_message_:
+  capoo_inlinekeyboard_selected_dynamic: "\
+    以下為動態 Capoo Stickers Packs：\n\
+    \n\
+    HyperCapoo\n\
+    https://t\\.me/addstickers/HyperCapoo\n\
+    \n\
+    HappyCapoo\n\
+    https://t\\.me/addstickers/HappyCapoo\n\
+    \n\
+    Capoo60FPS @IMG2D\n\
+    https://t\\.me/addstickers/Capoo60FPS\n\
+    \n\
+    Test animated stickers\n\
+    https://t\\.me/addstickers/test\\_animated\\_stickers000\n\
+    \n\
+    CAPOO SP\n\
+    https://t\\.me/addstickers/capoo\\_sp\\_animated\n\
+    \n\
+    Capoo @IMG2D\n\
+    https://t\\.me/addstickers/Animated\\_Capoo\n\
+    \n\
+    Black Capoo @IMG2D\n\
+    https://t\\.me/addstickers/Black\\_Capoo\n\
+    \n\
+    Orange Capoo @IMG2D\n\
+    https://t\\.me/addstickers/Orange\\_Capoo\n\
+    \n\
+    Capoo \\#2\n\
+    https://t\\.me/addstickers/AnimatedCapoo\n\
+    \n\
+    Capoo \\#3 @IMG2D\n\
+    https://t\\.me/addstickers/YourCapoo\n\
+    \n\
+    Capoo \\#4 @IMG2D\n\
+    https://t\\.me/addstickers/More\\_Capoo\n\
+    "
+  capoo_inline_keyboard_selected_static: "\
+    以下為靜態 Capoo Stickers Packs：\n\
+    \n\
+    貓貓蟲\\-咖波 激動小萌物 RekcitsEnilbot\n\
+    https://t\\.me/addstickers/line17811\\_by\\_RekcitsEnilbot\n\
+    \n\
+    Capoo的日常\n\
+    https://t\\.me/addstickers/capoo\\_no\\_nichijou\n\
+    \n\
+    綠帽der capoo\n\
+    https://t\\.me/addstickers/greencapoo\n\
+    \n\
+    貓貓蟲\\-咖波 好運發大財 賀年貼圖 RekcitsEnilbot\n\
+    https://t\\.me/addstickers/line19447\\_by\\_RekcitsEnilbot\n\
+    \n\
+    貓貓蟲\\-咖波 最讚的禮物 聖誕貼圖 RekcitsEnilbot\n\
+    https://t\\.me/addstickers/line366307294\\_by\\_RekcitsEnilbot\n\
+    \n\
+    貓貓蟲咖波\\-上班蟲逐漸崩壞 SeanChannel\n\
+    https://t\\.me/addstickers/line7920494\\_by\\_Sean\\_Bot\n\
+    \n\
+    貓貓蟲\\-咖波 超可愛訊息貼圖 RekcitsEnilbot\n\
+    https://t\\.me/addstickers/line293948094\\_by\\_RekcitsEnilbot\n\
+    \n\
+    BugCat\\-Capoo Easy to chat RekcitsEnilbot\n\
+    https://t\\.me/addstickers/line350755774\\_by\\_RekcitsEnilbot\n\
+    \n\
+    貓貓蟲\\-咖波\n\
+    https://t\\.me/addstickers/BugCat\\_Capoo\n\
+    \n\
+    BugCat\\-Capoo\\-2\n\
+    https://t\\.me/addstickers/BugCatCapoo2\n\
+    \n\
+    capoo\n\
+    https://t\\.me/addstickers/catbugcapoo\\_kenny\n\
+    \n\
+    貓腦蟲\\-咖波 兔兔戀愛中 taiwanesestickers\n\
+    https://t\\.me/addstickers/CapooLoveRabbit\n\
+    \n\
+    BugCat\\-Capoo\n\
+    https://t\\.me/addstickers/BugCat\n\
+    \n\
+    Capoo BugCat \\(elenmerbau\\)\n\
+    https://t\\.me/addstickers/capoobugcatstickers\n\
+    \n\
+    Capoo by KuoHuanHuan\n\
+    https://t\\.me/addstickers/Capoobyhuan\n\
+    \n\
+    壞掉的咖波\n\
+    https://t\\.me/addstickers/capoop\n\
+    "
+  hkg_inline_keyboard_selected_dynamic: "\
+    以下為HKG 動態 Stickers Packs：\n\
+    \n\
+    LIHKG Pig lihkg\\_official\n\
+    https://t\\.me/addstickers/LIHKG\\_Pig\\_Official\n\
+    \n\
+    LIHKG Cat lihkg\\_official\n\
+    https://t\\.me/addstickers/LIHKG\\_Cat\\_Official\n\
+    \n\
+    LIHKG Dog Animated \\(Unofficial\\)\n\
+    https://t\\.me/addstickers/LIHKGDogAnimatedUnofficial\n\
+    \n\
+    LIHKG Mouse Xmas Animated \\(Unofficial\\)\n\
+    https://t\\.me/addstickers/LIHKGMouseXmasAnimatedUnofficial\n\
+    \n\
+    LIHKG Dog Xmas Animated \\(Unofficial\\)\n\
+    https://t\\.me/addstickers/LIHKGDogXmasAnimatedUnofficial\n\
+    \n\
+    LIHKG Mouse and Cat \\(Unnofficial\\)\n\
+    https://t\\.me/addstickers/LIHKGmousecat\n\
+    \n\
+    LIHKG LOMORE XMAS ANIMATED \\(UNOFFICIAL\\)\n\
+    https://t\\.me/addstickers/LIHKGXmasLomore\n\
+    \n\
+    LIHKG LNY ANIMATED \\(UNOFFICIAL\\)\n\
+    https://t\\.me/addstickers/LIHKG\\_LNY\\_1\n\
+    \n\
+    LIHKG Lomore\n\
+    https://t\\.me/addstickers/LIHKGLomoreAnimated\n\
+    \n\
+    LIHKG\\_JW\n\
+    https://t\\.me/addstickers/LIHKG\\_JW\n\
+    \n\
+    lomore\n\
+    https://t\\.me/addstickers/lomore\\_anim\n\
+    \n\
+    lihkg\\_dog\\_jw\n\
+    https://t\\.me/addstickers/lihkg\\_dog\\_jw\n\
+    \n\
+    LIHKG Pig Animated \\(Pixal Art\\)\n\
+    https://t\\.me/addstickers/lihkg\\_pig\\_ani\\_px\n\
+    \n\
+    LIHKG Custom Animated\n\
+    https://t\\.me/addstickers/LIHKGCustomAnimated\n\
+    \n\
+    LIHKG Custom Animated 2\n\
+    https://t\\.me/addstickers/LIHKGCustomAnimated2\n\
+    " 
+  hkg_inline_keyboard_selected_static: "\
+    以下為靜態 HKG Stickers Packs：\n\
+    \n\
+    HKGmini\n\
+    https://t\\.me/addstickers/hkgmini\n\
+    \n\
+    HKG\n\
+    https://t\\.me/addstickers/Hkgolden\n\
+    \n\
+    高登傳統表情\n\
+    https://t\\.me/addstickers/hkg\\_official\\_general\n\
+    \n\
+    高登創意貼圖\n\
+    https://t\\.me/addstickers/hkg\\_official\\_creative\n\
+    \n\
+    hkgdw\n\
+    https://t\\.me/addstickers/hkgdw\n\
+    \n\
+    Lipig 3D \\(By slidingbunny\\)\n\
+    https://t\\.me/addstickers/lipig3d\n\
+    \n\
+    Lomoji Mini\n\
+    https://t\\.me/addstickers/LomojiMini\n\
+    \n\
+    lihkghusky\n\
+    https://t\\.me/addstickers/lihkg\\_husky\n\
+    \n\
+    LIHKG LM2 Vectorize\n\
+    https://t\\.me/addstickers/LIHKGLM2Vectorize\n\
+    "
+  cute_inline_keyboard_selected_dynamic: "\
+    以下為動態 Cute Stickers Packs：\n\
+    \n\
+    Cat farsisticker\n\
+    https://t\\.me/addstickers/cat\\_farsi\n\
+    \n\
+    C8@farsisticker\n\
+    https://t\\.me/addstickers/c890\\_farsisticker\n\
+    \n\
+    👉👉👉 Farsisticker\n\
+    https://t\\.me/addstickers/Facat\\_farsisticker\n\
+    \n\
+    C11 Farsisticker\n\
+    https://t\\.me/addstickers/c11\\_farsisticker\n\
+    \n\
+    CBR farsisticker\n\
+    https://t\\.me/addstickers/cbs\\_farsisticker\n\
+    \n\
+    rb👉🏻 Farsisticker\n\
+    https://t\\.me/addstickers/rb2\\_FarsiSticker\n\
+    \n\
+    fox farsisticker\n\
+    https://t\\.me/addstickers/mimofo3x4\\_farsisticker\n\
+    \n\
+    m2 farsisticker\n\
+    https://t\\.me/addstickers/mompigdadbear\\_farsisticker\n\
+    \n\
+    Meng farsisticker\n\
+    https://t\\.me/addstickers/mengmeng\\_farsisticker\n\
+    \n\
+    BR farsisticker\n\
+    https://t\\.me/addstickers/cpb\\_farsisticker\n\
+    \n\
+    White Rabbit IMG2D\n\
+    https://t\\.me/addstickers/Animated\\_White\\_Rabbit\n\
+    \n\
+    Too\\_nervous \\|golo\n\
+    https://t\\.me/addstickers/Golox\n\
+    \n\
+    вкусонОМИКА vkusonomika\n\
+    https://t\\.me/addstickers/vkusonomika\n\
+    \n\
+    CUTE CAT HANGSEED\n\
+    https://t\\.me/addstickers/HANGSEED9\n\
+    \n\
+    好想兔\\-真情外Ru @肥宅君\n\
+    https://t\\.me/addstickers/rabbit0608\\_2\n\
+    \n\
+    Quby\n\
+    https://t\\.me/addstickers/QubyAnimated\n\
+    \n\
+    Animated Funny Puny\n\
+    https://t\\.me/addstickers/animated\\_funny\\_puny\n\
+    "
+  cute_inline_keyboard_selected_static: "\
+    以下為靜態 Cute Stickers Packs：\n\
+    \n\
+    Kirby\\'sPuffball Sticker Set \\:\\:line\\_stickers\n\
+    https://t\\.me/addstickers/LINE\\_Kirby\\_Puffball\n\
+    \n\
+    KirbyOMG By BG\n\
+    https://t\\.me/addstickers/kirbyomg\\_bg\n\
+    \n\
+    芬達\n\
+    https://t\\.me/addstickers/OFanda\n\
+    \n\
+    Cute Chick by wontae\n\
+    https://t\\.me/addstickers/cutechickbywontae\n\
+    \n\
+    CUTE CHICKS\n\
+    https://t\\.me/addstickers/cute\\_chicks\n\
+    \n\
+    DogS IMG2D\n\
+    https://t\\.me/addstickers/More\\_Dogs\n\
+    \n\
+    CatS IMG2D\n\
+    https://t\\.me/addstickers/More\\_Cats\n\
+    \n\
+    Detective Pikachu\n\
+    https://t\\.me/addstickers/DetePikachu\n\
+    \n\
+    docomo chicken\n\
+    https://t\\.me/addstickers/docomochicken\n\  
+    "
