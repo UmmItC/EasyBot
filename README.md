@@ -53,7 +53,7 @@ All files in this repository are released under Apache License 2.0. See [LICENSE
 
 <table>
     <tr>
-        <th>Operative system</th>
+        <th>Operating system</th>
     </tr>
     <tr>
         <td>Arch Linux</td>
