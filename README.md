@@ -2,9 +2,18 @@
 
 this bot is call `EasyBot`, for the convenience of some troubles when there is no Stickers packs and languages UI to use,
 this is an open source project, if have some problem you can open issue on this repo.
-* *anyone is free to use on your server (if you want.)* *
 
-# Getting started
+*anyone is free to use on your machines, you can learn, hosting. (if you want.)*
+
+
+## What specials?
+
+there are two main points:
+
+- Telegram Stickers Packs
+- Telegram 3rd Languages
+
+# Getting start
 
 i'm using yaml for reading content, so you need to install **pyyaml**, for install type the following command:
 
@@ -19,6 +28,14 @@ and pyTelegrambotAPI is using python3.
 pip3 install pyTelegramBotAPI
 ```
 
+## Installation script
+
+if you feel Trouble on typing too many commands, you can run this script will following command:
+
+```shell
+./install.sh
+```
+
 
 ## Usage
 
@@ -30,26 +47,31 @@ Now on your bot type `/start` to start the bot.
 
 ## Folder tree
 
-the folder just only 6 files, below is the intro.
+the folder just only 8 files.
 
 ```shell
 EasyBot/
-├── CHANGELOG.md <- ALL Update will note with this CHANGLOG file. (commits)
-├── keyboard.yaml <- keyboard content
-├── LICENSE <- Apache License 2.0 detai
-├── main.py <- main file
-├── README.md <- read me first please
-├── TODO.md <- planning to do list
-└── token.json <- your Telegram API key
+├── CHANGELOG.md
+├── install.sh
+├── keyboard.yaml
+├── LICENSE
+├── main.py
+├── README.md
+├── TODO.md
+└── token.json
 
-1 directory, 7 files
+1 directory, 8 files
 ```
 
 # LICENSE
 
-All files in this repository are released under Apache License 2.0. See [LICENSE](LICENSE) file for more information.
+All files in this repository are released under Apache License 2.0.
+
+See [LICENSE](LICENSE) file for more information.
 
 # Tetested
+
+below is what i tested operating system.
 
 <table>
     <tr>
@@ -59,3 +81,14 @@ All files in this repository are released under Apache License 2.0. See [LICENSE
         <td>Arch Linux</td>
     </tr>
 </table>
+
+
+# Contributing
+
+Fork this repository, add your code, and make a pull request. MAKE SURE TO TEST THE FEATURE BEFORE OPENING THE PULL REQUEST
+
+Anyone is welcome to contributing, please make sure is the lastest code!
+
+1. Fork this repository
+2. add your code
+3. make pull request.
