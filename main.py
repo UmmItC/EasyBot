@@ -13,13 +13,13 @@ with open('keyboard.yaml', 'r') as f1, open('token.json', 'r') as f2:
 
 locals().update(keyboard)
 
-# 取得 bot token
+# getting bot token
 bot_token = config['token']
 
-# 建立 Telebot 物件
+# create telebot
 bot = telebot.TeleBot(bot_token, parse_mode='MarkdownV2')
 
-# 設定 logging
+# setup logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
@@ -32,16 +32,16 @@ def process_start_keyboard(message, from_back=False):
     else:
         welcome_message = "你已返回主選單，請繼續使用鍵盤提供的文字輸入指令！"
 
-    # 建立鍵盤
+    # Create keyboard
     markup = telebot.types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True)
 
-    # 建立鍵盤按鈕
+    # Create keyboard button
     stickers_btn = telebot.types.KeyboardButton('Stickers Packs')
     language_btn = telebot.types.KeyboardButton('Languages')
     bot_info_btn = telebot.types.KeyboardButton('About Bot')
     close_keyboard_btn = telebot.types.KeyboardButton('Close Keyboard')
 
-    # 加入按鈕到鍵盤
+    # adding button to keyboard
     markup.add(stickers_btn, language_btn, bot_info_btn, close_keyboard_btn)
     bot.send_message(message.chat.id, welcome_message,reply_markup=markup)
 
@@ -49,17 +49,15 @@ def processs_stickers_keyboard(message):
     user_first_name = message.from_user.first_name
     user_last_name = message.from_user.last_name
     replykeyboard_stickers_packs = keyboard["first_keyboard_showing_message_"]["username_asking_stickers_keyboard_selected"].format(user_first_name=user_first_name, user_last_name=user_last_name)
-    # 建立鍵盤
+
     markup = telebot.types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True)
 
-    # 建立鍵盤按鈕
     Capoo_Stickerspacks_select_btn = telebot.types.KeyboardButton("Capoo Stickers Packs")
     HKG_Stickerspacks_select_btn = telebot.types.KeyboardButton("HKG Stickers Packs")
     Cute_Stickerspacks_selectbtn = telebot.types.KeyboardButton("Cute Stickers Packs")
     select_cd_back_btn = telebot.types.KeyboardButton("Back")
     close_keyboard_btn = telebot.types.KeyboardButton("Close Keyboard")
 
-    # 加入按鈕到鍵盤
     markup.add(Capoo_Stickerspacks_select_btn, HKG_Stickerspacks_select_btn, Cute_Stickerspacks_selectbtn, select_cd_back_btn, close_keyboard_btn)
     bot.send_message(message.chat.id, replykeyboard_stickers_packs,reply_markup=markup)
 
@@ -127,6 +125,7 @@ def capoo_inlinekeyboard():
     markup.add(capoo_key1, capoo_key2)
     
     # 將鍵盤賦值給全局變量 Capoo_keyb
+    # adding keyboard variable with Global variable (Capoo_keyb)
     Capoo_keyb = markup
 
 def HKG_inlinekeyboard():
@@ -135,9 +134,8 @@ def HKG_inlinekeyboard():
     markup = types.InlineKeyboardMarkup(row_width=2)
     hkg_key1 = types.InlineKeyboardButton("動態 HKG", callback_data="hkg_dynamic")
     hkg_key2 = types.InlineKeyboardButton("靜態 HKG", callback_data="hkg_static")
-    markup.add(hkg_key1, hkg_key2)
-    
-    # 將鍵盤賦值給全局變量 HKG_keyb
+    markup.add(hkg_key1, hkg_key2)    
+
     HKG_keyb = markup
 
 def Cute_inlinekeyboard():
@@ -148,7 +146,6 @@ def Cute_inlinekeyboard():
     cute_key2 = types.InlineKeyboardButton("靜態 Cute", callback_data="cute_static")
     markup.add(cute_key1, cute_key2)
     
-    # 將鍵盤賦值給全局變量 Cute_keyb
     Cute_keyb = markup
 
 def capoo_start(message):
@@ -213,7 +210,7 @@ def send_stickers(message):
     if message.chat.type == "private":
         bot.reply_to(message,"Dont send any Stickers to me.")
 
-# 設定 debug mode handler
+# setting debug mode handler
 @bot.message_handler(func=lambda message: True)
 def handle_all_messages(message):
     location = "error_dont_know"
