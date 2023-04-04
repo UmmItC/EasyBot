@@ -33,7 +33,7 @@ pip3 install pyTelegramBotAPI
 if you feel Trouble on typing too many commands, you can run this script will following command:
 
 ```shell
-./install.sh
+./setup.sh
 ```
 
 
@@ -85,10 +85,11 @@ below is what i tested operating system.
 
 # Contributing
 
-Fork this repository, add your code, and make a pull request. MAKE SURE TO TEST THE FEATURE BEFORE OPENING THE PULL REQUEST
+Fork this repository, add your code, and make a pull request!
 
 Anyone is welcome to contributing, please make sure is the lastest code!
 
-1. Fork this repository
-2. add your code
-3. make pull request.
+three things please makesure:
+
+1. **makesure test the code before opened the pull request.**
+2. **the code is lastest code**
