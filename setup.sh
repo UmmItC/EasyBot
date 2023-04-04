@@ -6,10 +6,6 @@ if [[ $EUID -eq 0 ]]; then
 fi
 
 function run_program {
-  read -p "form now on need to edit your token.json file, input your token here: " token
-
-  sed -i "s/\"token\": \".*\"/\"token\": \"$token\"/" token.json
-
   read -p "Do you want to run the program now? (y/n) " choice
   case "$choice" in
     y|Y )
@@ -24,13 +20,20 @@ function run_program {
   esac
 }
 
+function edit_token {
+  read -p "form now on need to edit your token.json file, input your token here: " token
+
+  sed -i "s/\"token\": \".*\"/\"token\": \"$token\"/" token.json
+  run_program
+}
+
 read -p "Now will install pyTelegramBotAPI, pyyaml module (y/n) " install_module
 case "$install_module" in
   y|Y )
     pip install pyTelegramBotAPI pyyaml
     ;;
   n|N )
-    run_program
+    edit_token
     ;;
   * )
     echo "Invalid choice. Exiting."
