@@ -9,7 +9,7 @@ function run_program {
   read -p "Do you want to run the program now? (y/n) " choice
   case "$choice" in
     y|Y )
-      python main.py
+      python3 main.py
       ;;
     n|N )
       echo "Exit program."
@@ -30,7 +30,7 @@ function edit_token {
 read -p "Now will install pyTelegramBotAPI, pyyaml module (y/n) " install_module
 case "$install_module" in
   y|Y )
-    pip install pyTelegramBotAPI pyyaml
+    pip3 install pyTelegramBotAPI pyyaml
     ;;
   n|N )
     edit_token
