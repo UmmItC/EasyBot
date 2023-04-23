@@ -85,11 +85,9 @@ below is what i tested operating system.
 
 # Contributing
 
-Fork this repository, add your code, and make a pull request!
-
 Anyone is welcome to contributing, please make sure is the lastest code!
 
-three things please makesure:
+two things please makesure!
 
 1. **makesure test the code before opened the pull request.**
 2. **the code is lastest code**
