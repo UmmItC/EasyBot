@@ -112,56 +112,56 @@ def keyboard_stickers_if_statement(message):
         bot.reply_to(message,private_chat_only)
         bot.register_next_step_handler(message,keyboard_stickers_if_statement)
 
-Capoo_keyb = None
-HKG_keyb = None
-Cute_keyb = None
+g_Capoo_keyb = None
+g_HKG_keyb = None
+g_Cute_keyb = None
 
 def capoo_inlinekeyboard():
-    global Capoo_keyb
+    global g_Capoo_keyb
     
     markup = types.InlineKeyboardMarkup(row_width=2)
     capoo_key1 = types.InlineKeyboardButton("動態 Capoo", callback_data="capoo_dynamic")
     capoo_key2 = types.InlineKeyboardButton("靜態 Capoo", callback_data="capoo_static")
     markup.add(capoo_key1, capoo_key2)
     
-    # 將鍵盤賦值給全局變量 Capoo_keyb
-    # adding keyboard variable with Global variable (Capoo_keyb)
-    Capoo_keyb = markup
+    # 將鍵盤賦值給全局變量 g_Capoo_keyb
+    # adding keyboard variable with Global variable (g_Capoo_keyb)
+    g_Capoo_keyb = markup
 
 def HKG_inlinekeyboard():
-    global HKG_keyb
+    global g_HKG_keyb
     
     markup = types.InlineKeyboardMarkup(row_width=2)
     hkg_key1 = types.InlineKeyboardButton("動態 HKG", callback_data="hkg_dynamic")
     hkg_key2 = types.InlineKeyboardButton("靜態 HKG", callback_data="hkg_static")
     markup.add(hkg_key1, hkg_key2)    
 
-    HKG_keyb = markup
+    g_HKG_keyb = markup
 
 def Cute_inlinekeyboard():
-    global Cute_keyb
+    global g_Cute_keyb
     
     markup = types.InlineKeyboardMarkup(row_width=2)
     cute_key1 = types.InlineKeyboardButton("動態 Cute", callback_data="cute_dynamic")
     cute_key2 = types.InlineKeyboardButton("靜態 Cute", callback_data="cute_static")
     markup.add(cute_key1, cute_key2)
     
-    Cute_keyb = markup
+    g_Cute_keyb = markup
 
 def capoo_start(message):
     capoo_inlinekeyboard()
     keyboardcapoo_selected = keyboard["stickerspacks_keyboard_showing_message_selected_"]["select_capoo_stickers_packs"]
-    bot.reply_to(message, keyboardcapoo_selected, reply_markup=Capoo_keyb)
+    bot.reply_to(message, keyboardcapoo_selected, reply_markup=g_Capoo_keyb)
 
 def HKG_start(message):
     HKG_inlinekeyboard()
     keyboardhkg_selected = keyboard["stickerspacks_keyboard_showing_message_selected_"]["select_hkg_stickers_packs"]
-    bot.reply_to(message, keyboardhkg_selected, reply_markup=HKG_keyb)
+    bot.reply_to(message, keyboardhkg_selected, reply_markup=g_HKG_keyb)
 
 def Cute_start(message):
     Cute_inlinekeyboard()
     keyboardcute_selected = keyboard["stickerspacks_keyboard_showing_message_selected_"]["select_cute_stickers_packs"]
-    bot.reply_to(message, keyboardcute_selected, reply_markup=Cute_keyb)
+    bot.reply_to(message, keyboardcute_selected, reply_markup=g_Cute_keyb)
 
 @bot.callback_query_handler(func=lambda call: True)
 def query_handler(call):
@@ -171,27 +171,27 @@ def query_handler(call):
         if call.data == "capoo_dynamic":
             bot.answer_callback_query(call.id, "即將為你顯示動態 Capoo Stickers。")
             inlinekeyboard_capoo_message_x = keyboard["inlinekeyboard_showing_message_"]["capoo_inlinekeyboard_selected_dynamic"]
-            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=inlinekeyboard_capoo_message_x, reply_markup=Capoo_keyb)
+            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=inlinekeyboard_capoo_message_x, reply_markup=g_Capoo_keyb)
         elif call.data == "capoo_static":
             bot.answer_callback_query(call.id, "即將為你顯示靜態 Capoo Stickers。")
             inlinekeyboard_capoo_message_x2 = keyboard["inlinekeyboard_showing_message_"]["capoo_inline_keyboard_selected_static"]
-            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=inlinekeyboard_capoo_message_x2, reply_markup=Capoo_keyb)
+            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=inlinekeyboard_capoo_message_x2, reply_markup=g_Capoo_keyb)
         elif call.data == "hkg_dynamic":
             bot.answer_callback_query(call.id, "即將為你顯示動態 HKG Stickers。")
             inlinekeyboard_hkg_message_x = keyboard["inlinekeyboard_showing_message_"]["hkg_inline_keyboard_selected_dynamic"]
-            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=inlinekeyboard_hkg_message_x, reply_markup=HKG_keyb)
+            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=inlinekeyboard_hkg_message_x, reply_markup=g_HKG_keyb)
         elif call.data == "hkg_static":
             bot.answer_callback_query(call.id, "即將為你顯示靜態 HKG Stickers。")
             inlinekeyboard_hkg_message_x2 = keyboard["inlinekeyboard_showing_message_"]["hkg_inline_keyboard_selected_static"]
-            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=inlinekeyboard_hkg_message_x2, reply_markup=HKG_keyb)
+            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=inlinekeyboard_hkg_message_x2, reply_markup=g_HKG_keyb)
         elif call.data == "cute_dynamic":
             bot.answer_callback_query(call.id, "即將為你顯示動態 Cute Stickers。")
             inlinekeyboard_cute_message_x = keyboard["inlinekeyboard_showing_message_"]["cute_inline_keyboard_selected_dynamic"]
-            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=inlinekeyboard_cute_message_x, reply_markup=Cute_keyb)
+            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=inlinekeyboard_cute_message_x, reply_markup=g_Cute_keyb)
         elif call.data == "cute_static":
             bot.answer_callback_query(call.id, "即將為你顯示靜態 Cute Stickers。")
             inlinekeyboard_cute_message_x2 = keyboard["inlinekeyboard_showing_message_"]["cute_inline_keyboard_selected_static"]
-            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=inlinekeyboard_cute_message_x2, reply_markup=Cute_keyb)
+            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=inlinekeyboard_cute_message_x2, reply_markup=g_Cute_keyb)
 
 
 keyboard_opened = False
